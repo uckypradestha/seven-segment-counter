@@ -1,11 +1,43 @@
-//7-Segment Display (Efficient Version)
-//Display 0 - 9 and A - F
+/*
+  Seven Segment Display Control
+
+  Program ini digunakan untuk mengontrol sebuah seven segment display
+  menggunakan Arduino untuk menampilkan angka dan karakter heksadesimal
+  secara berurutan.
+
+  Prinsip kerja sistem:
+  - Setiap segmen pada seven segment (a, b, c, d, e, f, g) dihubungkan
+    ke pin digital Arduino.
+  - Arduino mengontrol penyalaan setiap segmen menggunakan fungsi
+    digitalWrite() sehingga kombinasi segmen tertentu dapat membentuk
+    angka atau karakter.
+  - Waktu tampilan setiap angka diatur menggunakan fungsi delay().
+  - Sistem berjalan secara berulang di dalam fungsi loop().
+
+  Catatan:
+  - Setiap segmen LED sebaiknya menggunakan resistor untuk membatasi arus
+    agar komponen tidak rusak.
+  - Jenis seven segment yang digunakan (common anode atau common cathode)
+    akan mempengaruhi logika HIGH dan LOW pada program.
+  - Pola penyalaan segmen menentukan bentuk angka yang ditampilkan.
+
+  Program ini dibuat sebagai latihan penggunaan output digital
+  serta pengendalian tampilan LED pada sistem mikrokontroler Arduino.
+
+  Dibuat oleh Ucky Pradestha
+  Tahun 2026
+  Direvisi oleh -
+  Tahun -
+*/
+
+//7-Segment Display
+//Display 0 - 9 dan A - F
 
 // Pin mapping segment
 const int segmentPins[7] = {7, 6, 5, 11, 10, 8, 9}; 
 // a  b  c  d  e  f  g
 
-// Segment pattern for 0-F
+// Pola segmen 0-F
 // urutan segmen: a b c d e f g
 byte digitPattern[16][7] = {
 
