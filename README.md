@@ -1,5 +1,7 @@
 # Seven Segment Display with Arduino
 
+![WhatsApp Image 2026-03-17 at 00 23 05](https://github.com/user-attachments/assets/f70dbec3-e77f-4d2b-b8ab-7a89a18574cc)
+
 ## Overview
 Project ini menunjukkan cara menggunakan **seven segment display** untuk menampilkan angka menggunakan **Arduino**.  
 Seven segment merupakan salah satu komponen display paling sederhana yang terdiri dari **7 segmen LED** yang dapat dikontrol secara individual untuk membentuk angka.
@@ -60,13 +62,9 @@ Langkah-langkah menjalankan project:
 
 ---
 
-## Learning Objectives
-Melalui project ini, beberapa konsep dasar yang dapat dipelajari antara lain:
-
-- Dasar **wiring komponen elektronik**
-- Kontrol **LED menggunakan mikrokontroler**
-- Konsep **logika digital pada display**
-- Pemrograman dasar menggunakan **Arduino**
+## Wiring Diagram
+Berikut adalah wiring diagramnya
+<img width="1536" height="632" alt="Glorious Jaagub-Snicket" src="https://github.com/user-attachments/assets/9f67a1da-cad2-424c-9baf-1149a7b08ef0" />
 
 ---
 
